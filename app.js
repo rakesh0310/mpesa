@@ -88,7 +88,6 @@ app.get('/register', access, (req, resp) => {
 app.post('/confirmation', (req, res) => {
   console.log('....................... confirmation .............');
   res.status(200).json({
-    "ResultCode":0, "ResultDesc":"Success", "ThirdPartyTransID": 0
     ResultCode: 0,
     ResultDesc: 'confirmation Service processing successful',
   });

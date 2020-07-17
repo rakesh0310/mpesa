@@ -72,8 +72,8 @@ app.get('/register', access, (req, resp) => {
       json: {
         ShortCode: '600779',
         ResponseType: 'Complete',
-        ConfirmationURL: 'https://en0mxvxwswiwza.x.pipedream.net/',
-        ValidationURL: 'https://en4vn6ucb15p.x.pipedream.net/',
+        ConfirmationURL: 'https://forvandc.herokuapp.com/confirmation',
+        ValidationURL: 'https://forvandc.herokuapp.com/validation',
       },
     },
     function (error, response, body) {
@@ -88,6 +88,7 @@ app.get('/register', access, (req, resp) => {
 app.post('/confirmation', (req, res) => {
   console.log('....................... confirmation .............');
   res.status(200).json({
+    "ResultCode":0, "ResultDesc":"Success", "ThirdPartyTransID": 0
     ResultCode: 0,
     ResultDesc: 'confirmation Service processing successful',
   });

@@ -72,7 +72,7 @@ app.get('/register', access, (req, resp) => {
       json: {
         ShortCode: '600779',
         ResponseType: 'Complete',
-        ConfirmationURL: 'https://forvandc.herokuapp.com/confirmation',
+        ConfirmationURL: 'https://en0mxvxwswiwza.x.pipedream.net/',
         ValidationURL: 'https://forvandc.herokuapp.com/validation',
       },
     },

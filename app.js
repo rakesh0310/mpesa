@@ -94,7 +94,7 @@ app.post('/confirmation', (req, res) => {
   console.log(req.body);
 });
 
-app.post('/validation', (req, resp) => {
+app.post('/validation', (req, res) => {
   console.log('....................... validation .............');
   res.status(200).json({
     ResultCode: 0,

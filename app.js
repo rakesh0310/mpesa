@@ -5,6 +5,16 @@ const port = 8080;
 const app = express();
 app.use(bodyParser.json());
 
+
+app.use( (req, res, next) => {
+	res.header("Access-Control-Allow-Origin", "*");
+	if (req.method === 'OPTIONS') {
+		res.header('Access-Control-Allow-Methods', 'GET, POST');
+		return res.status(200).json({});
+	}
+	next();
+});
+
 const urls = {
   stk: '',
   simulate: '',

@@ -72,8 +72,8 @@ app.get('/register', access, (req, resp) => {
       json: {
         ShortCode: '600779',
         ResponseType: 'Complete',
-        ConfirmationURL: 'https://en4vn6ucb15p.x.pipedream.net/',
-        ValidationURL: 'https://en0mxvxwswiwza.x.pipedream.net/',
+        ConfirmationURL: 'https://mpesa123.herokuapp.com/confirmation',
+        ValidationURL: 'https://mpesa123.herokuapp.com/validation',
       },
     },
     function (error, response, body) {
